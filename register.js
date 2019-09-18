@@ -57,12 +57,17 @@ $(function () {
                 var $formContainer = $('#form-container');
                 var $webinarSuccess = $('#webinar-success');
                 var $joinUrl = $('a.join-url');
-                var $webinarDate = ( isVisible($('.webinar-date-mobile p')) ) ? $('.webinar-date-mobile p') : $('.webinar-date-desktop p');
+                var $webinarDate = ( isVisible($('.webinar-date-mobile')) ) ? $('.webinar-date-mobile') : $('.webinar-date-desktop');
+                var $webinarOccurrences = $($webinarDate, '.webinar-times li:first');
 
                 $joinUrl.attr('href', response.data.join_url);
                 $joinUrl.html(response.data.join_url);
 
-                $('.webinar-join-date').html( '<strong>Date:</strong> ' + $webinarDate.clone().text() );
+                if( $webinarOccurrences.length ) {
+                    $('.webinar-join-date').html( '<strong>Date:</strong> ' +$webinarOccurrences.clone().text() );
+                } else {
+                    $('.webinar-join-date').html( '<strong>Date:</strong> ' + $($webinarDate, 'p').clone().text() );
+                }
 
                 $('#form-error').hide();
                 $formContainer.addClass('is-hidden');
