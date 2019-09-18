@@ -1,5 +1,3 @@
-var formToken = '${config.antiSpamToken}';
-
 var emailField = document.getElementById('email-address')
     , confirmEmailField = document.getElementById('confirm-email-address');
 
