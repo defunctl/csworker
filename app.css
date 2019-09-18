@@ -1,0 +1,24 @@
+.ss-arrow {
+    display: none !important;
+}
+
+.ss-main .ss-single-selected {
+    height: 2.25em;
+}
+@media (hover: hover) {
+    .select select {
+        display: block !important;
+        position: absolute;
+        clip: rect(0,0,0,0);
+        pointer-events: none;
+    }
+}
+
+.required-star {
+    color: #E02828;
+    font-weight: normal;
+}
+
+.join-url {
+    word-wrap: break-word;
+}
