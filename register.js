@@ -16,7 +16,7 @@ function validateEmail(){
 }
 
 emailField.onchange = validateEmail;
-confirmEmailField.onkeyup = validateEmail;
+confirmEmailField.oninput = validateEmail;
 
 $(function () {
 
