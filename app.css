@@ -22,3 +22,19 @@
 .join-url {
     word-wrap: break-word;
 }
+
+/* Google Translate Widget */
+#google_translate_element select {
+    height: 35px;
+    background-color: #fff;
+    color: #000
+}
+
+#google_translate_element select+select {
+    background-color: gray;
+    display: none
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none!important;
+}
