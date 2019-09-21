@@ -28,12 +28,6 @@
 }
 
 /* Google Translate Widget */
-#google_translate_element select {
-    height: 35px;
-    background-color: #fff;
-    color: #000
-}
-
 #google_translate_element select+select {
     background-color: gray;
     display: none
@@ -80,13 +74,13 @@
     vertical-align: top;
 }
 
-.goog-te-combo:not(.is-multiple):not(.is-loading)::after {
+.goog-te-gadget div:not(.is-multiple):not(.is-loading)::after {
     border-color: #3273dc;
     right: 1.125em;
     z-index: 4;
 }
 
-.navbar-link:not(.is-arrowless)::after, .goog-te-combo:not(.is-multiple):not(.is-loading)::after {
+.goog-te-gadget div:not(.is-multiple):not(.is-loading)::after {
     border: 3px solid transparent;
     border-radius: 2px;
     border-right: 0;
@@ -108,4 +102,5 @@
 .gtranslate-icon {
     height: 40px;
     padding-right: 5px;
+    filter: brightness(0) invert(1);
 }
