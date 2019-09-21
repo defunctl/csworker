@@ -38,6 +38,7 @@
 }
 
 .goog-te-gadget {
+    position: relative;
     display: inline-block!important;
     color: transparent!important;
     font-size: 0!important;
@@ -52,6 +53,8 @@
 }
 
 .goog-te-combo {
+    font-family: inherit !important;
+    font-size: inherit !important;
     box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
     max-width: 100%;
     width: 100%;
@@ -99,7 +102,7 @@
 }
 
 .gtranslate-icon {
-    height: 40px;
+    height: 46px;
     padding-right: 5px;
     filter: brightness(0) invert(1);
 }
