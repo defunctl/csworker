@@ -77,7 +77,7 @@ $(function () {
         var trace = [];
         axios.get(url)
             .then(function(response) {
-                var lines = response.split('\n');
+                var lines = response.data.split('\n');
                 var keyValue;
                 lines.forEach(function (line) {
                     keyValue = line.split('=');
