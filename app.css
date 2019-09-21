@@ -38,3 +38,15 @@
 .goog-te-banner-frame.skiptranslate {
     display: none!important;
 }
+
+.goog-te-gadget {
+    color: transparent!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none
+}
+
+.goog-logo-link {
+    display: none!important
+}
