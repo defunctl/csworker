@@ -37,6 +37,10 @@
     display: none!important;
 }
 
+.goog-tooltip {
+    display: none !important;
+}
+
 .goog-te-gadget {
     position: relative;
     display: inline-block!important;
