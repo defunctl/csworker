@@ -28,6 +28,10 @@
 }
 
 /* Google Translate Widget */
+#google_translate_element {
+    padding-bottom: 0.75rem;
+}
+
 #google_translate_element select+select {
     background-color: gray;
     display: none
@@ -74,7 +78,7 @@
     line-height: 1.5;
     padding-bottom: calc(.375em - 1px);
     padding-left: calc(.625em - 1px);
-    padding-right: calc(.625em - 1px);
+    padding-right: 2.5em;
     padding-top: calc(.375em - 1px);
     position: relative;
     vertical-align: top;
