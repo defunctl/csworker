@@ -28,6 +28,10 @@
 }
 
 /* Google Translate Widget */
+body {
+    top: 0 !important;
+}
+
 #google_translate_element {
     padding-bottom: 0.75rem;
 }
