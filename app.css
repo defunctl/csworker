@@ -9,7 +9,7 @@
 .ss-main .ss-single-selected {
     height: 2.25em;
 }
-.select select:not([data-ssid='']) {
+.select select[data-ssid=''] {
     display: block !important;
     position: absolute;
     clip: rect(0,0,0,0);
