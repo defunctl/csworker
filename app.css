@@ -9,13 +9,11 @@
 .ss-main .ss-single-selected {
     height: 2.25em;
 }
-@media (hover: hover) {
-    .select select {
-        display: block !important;
-        position: absolute;
-        clip: rect(0,0,0,0);
-        pointer-events: none;
-    }
+.select select:not([data-ssid='']) {
+    display: block !important;
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
 }
 
 .required-star {
