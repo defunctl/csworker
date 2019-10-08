@@ -7,7 +7,8 @@
     display: none !important;
 }
 
-.ss-main .ss-single-selected {
+.ss-main .ss-single-selected,
+.ss-main .ss-multi-selected {
     height: 2.25em;
 }
 .select select[data-ssid=''] {
