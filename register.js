@@ -51,7 +51,7 @@ $(function () {
         console.log('not a touchscreen');
         var slim = [];
 
-        $('.select select').not('.is-multiple select').each(function() {
+        $('.select select').each(function() {
             slim[this.id] = new SlimSelect({
                 select: '#' + this.id,
                 placeholder: 'Choose one...'
@@ -59,8 +59,12 @@ $(function () {
         });
     }
 
-    // Update multiselect placeholders
-    $('.ss-multi-selected .ss-disabled').text('Choose many...');
+    $('.is-multiple select').each(function() {
+        slim[this.id] = new SlimSelect({
+            select: '#' + this.id,
+            placeholder: 'Choose many...'
+        });
+    });
 
     $('#register').on('submit', function(e) {
 
