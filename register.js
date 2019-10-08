@@ -51,7 +51,7 @@ $(function () {
         console.log('not a touchscreen');
         var slim = [];
 
-        $('.select select').each(function() {
+        $('.select select').not('.is-multiple select').each(function() {
             slim[this.id] = new SlimSelect({
                 select: '#' + this.id,
                 placeholder: 'Choose one...'
