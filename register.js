@@ -59,6 +59,9 @@ $(function () {
         });
     }
 
+    // Update multiselect placeholders
+    $('.ss-multi-selected .ss-disabled').text('Choose many...');
+
     $('#register').on('submit', function(e) {
 
         e.preventDefault();
