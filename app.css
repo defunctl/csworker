@@ -2,7 +2,8 @@
     background-color: #253746 !important;
 }
 
-.ss-arrow {
+.ss-arrow,
+.ss-main .ss-multi-selected .ss-add {
     display: none !important;
 }
 
