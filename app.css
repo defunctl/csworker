@@ -11,7 +11,7 @@
 .ss-main .ss-multi-selected {
     height: 2.25em;
 }
-.select select[data-ssid=''] {
+.select select[data-ssid] {
     display: block !important;
     position: absolute;
     clip: rect(0,0,0,0);
