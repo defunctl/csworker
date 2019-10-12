@@ -45,12 +45,9 @@ $(function () {
         return result;
     }
 
-    console.log( detectTouchscreen() );
+    var slim = [];
 
     if (!detectTouchscreen()) {
-        console.log('not a touchscreen');
-        var slim = [];
-
         $('.select select').each(function() {
             slim[this.id] = new SlimSelect({
                 select: '#' + this.id,
