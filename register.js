@@ -136,7 +136,7 @@ $(function () {
 
         pathname = pathname.substring(0, pathname.indexOf('tz/'));
 
-        var selectedTz = (typeof slim !== 'undefined') ? slim['switch-time-zone'].selected() : $('#switch-time-zone').val();
+        var selectedTz = (typeof slim !== 'undefined' && typeof(slim['switch-time-zone'].selected()) !== 'undefined' ) ? slim['switch-time-zone'].selected() : $('#switch-time-zone').val();
 
         if(pathname) {
             window.location.pathname = pathname + 'tz/' + selectedTz;
