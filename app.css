@@ -28,6 +28,11 @@
     word-wrap: break-word;
 }
 
+/* Radio buttons */
+.radio {
+    padding-right: 1rem;
+}
+
 /* Google Translate Widget */
 body {
     top: 0 !important;
