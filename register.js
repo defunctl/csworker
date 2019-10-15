@@ -136,7 +136,7 @@ $(function () {
 
         pathname = pathname.substring(0, pathname.indexOf('tz/'));
 
-        var selectedTz = (typeof slim !== 'undefined' && typeof slim['switch-time-zone'].selected() === 'function' ) ? slim['switch-time-zone'].selected() : $('#switch-time-zone').val();
+        var selectedTz = (detectTouchscreen()) ? $('#switch-time-zone').val() : slim['switch-time-zone'].selected();
 
         if(pathname) {
             window.location.pathname = pathname + 'tz/' + selectedTz;
