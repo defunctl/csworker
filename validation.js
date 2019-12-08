@@ -2,7 +2,6 @@ $(function () {
     var $registerInputs = $('#register input[type=text]');
 
     $registerInputs.on('invalid', function () {
-        console.log($(this));
         if ($(this).get(0).validity.valueMissing) {
             $(this).get(0).setCustomValidity('Please fill out this field');
         } else {
