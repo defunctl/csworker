@@ -104,7 +104,7 @@ $(function () {
                 var $errorElement = $('#form-error');
 
                 if(typeof error.response.data !== 'undefined' && error.response.data.code) {
-                    $errorElement.html(error.response.data.message);
+                    $errorElement.html( 'Sorry, there was an error with your registration. Please contact <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#099;&#121;&#098;&#101;&#114;&#115;&#105;&#103;&#104;&#116;&#046;&#111;&#114;&#103;">support@cybersight.org</a> for help. Error Code: ' + error.response.data.code );
                     $errorElement.removeClass('is-hidden');
                     $errorElement[0].scrollIntoView();
                 }
