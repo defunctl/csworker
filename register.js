@@ -13,6 +13,12 @@ function validateEmail(){
     } else {
         emailField.setCustomValidity('');
     }
+
+    if( emailField.validity.patternMismatch ) {
+        emailField.setCustomValidity('Please enter no more than 128 characters.');
+    } else {
+        emailField.setCustomValidity('');
+    }
 }
 
 emailField.onchange = validateEmail;
