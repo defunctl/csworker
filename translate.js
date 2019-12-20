@@ -88,5 +88,5 @@ $(function () {
             });
     }
 
-    parseTrace('https://cybersight.org/cdn-cgi/trace');
+    parseTrace('https://' + window.location.hostname + '/cdn-cgi/trace');
 });
